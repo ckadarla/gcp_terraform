@@ -1,6 +1,6 @@
 # provider "google" {
-#   region  = "us-central1"
-#   #   credentials = "tf-cp.json"
+#   region      = "us-central1"
+#   credentials = "tf-cp.json"
 # }
 
 resource "google_storage_bucket" "cp-bucket" {
