@@ -1,0 +1,12 @@
+# Ignore Terraform lock file
+.terraform.lock.hcl
+
+# Ignore Terraform execution plan files
+*.tfplan
+
+# Ignore Terraform provider-specific directories
+.terraform/
+
+*tf-cp.json
+
+

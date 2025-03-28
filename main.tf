@@ -1,11 +1,12 @@
 provider "google" {
-
+  project     = "gcp-poc-313408"
+  region      = "us-central1"
+  credentials = "tf-cp.json"
 }
 
-resource "google_storage_bucket" "auto-expire" {
-  name                     = "no-public-access-bucket"
+resource "google_storage_bucket" "cp-bucket" {
+  name                     = "cp-no-public-access-bucket"
   location                 = "US"
   force_destroy            = true
-  project                  = "gcp-poc-313408"
   public_access_prevention = "enforced"
 }
