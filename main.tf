@@ -8,7 +8,7 @@ resource "google_storage_bucket" "cp-bucket" {
   location                 = "US"
   force_destroy            = true
   public_access_prevention = "enforced"
-    project = "gcp-poc-313408"
+  project                  = "gcp-poc-313408"
 
 }
 #
