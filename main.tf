@@ -10,3 +10,4 @@ resource "google_storage_bucket" "cp-bucket" {
   force_destroy            = true
   public_access_prevention = "enforced"
 }
+#
