@@ -4,6 +4,8 @@
 # Ignore Terraform execution plan files
 *.tfplan
 
+terraform.tfstate
+
 # Ignore Terraform provider-specific directories
 .terraform/
 
