@@ -38,7 +38,7 @@ jobs:
     - name: Terraform Format
       run: terraform fmt -check
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.tf-cp}}
+           GOOGLE_CREDENTIALS: ${{ secrets.tf-cp}}
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
@@ -52,4 +52,4 @@ jobs:
       if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
       run: terraform apply -auto-approve -input=false
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.tf-cp}}
+           GOOGLE_CREDENTIALS: ${{ secrets.tf-cp}}
