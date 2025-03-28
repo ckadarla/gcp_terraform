@@ -1,7 +1,7 @@
 provider "google" {
-  project     = "gcp-poc-313408"
-  region      = "us-central1"
-#   credentials = "tf-cp.json"
+  project = "gcp-poc-313408"
+  region  = "us-central1"
+  #   credentials = "tf-cp.json"
 }
 
 resource "google_storage_bucket" "cp-bucket" {
